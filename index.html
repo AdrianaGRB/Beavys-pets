@@ -9,55 +9,168 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stiles.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Challenges</title>
   </head>
   <body>
+
+    <!-- Header -->
+
     <header>
       <nav>
-        <img class="logo" src="./logo.png" alt="Logotipo" />
-        <ul>
-          <li><a class="inicio" href="Inicio.asp">Inicio</a></li>
-          <li><a class="servicios" href="servicios.asp">Servicios</a></li>
-          <li><a class="nosotros" href="Nosotros">Nosotros</a></li>
-          <li><a class="contacto" href="Contáctanos.asp">Contáctanos</a></li>
+        <ul class="menu">
+          <li>
+            <a href="#" class="logo-link"><img class="logo" src="./logo.png" alt="Logotipo"></a>
+          </li>
+          <div class="container_nav"></div>
+          <li class="item"><a href="#inicio">Inicio</a></li>
+          <li class="item"><a href="#nosotros">Nosotros</a></li>
+          <li class="item"><a href="#servicios">Servicios</a></li>
+          <li class="item"><a href="#contacto">Contáctanos</a></li>
+          <div class="btn__container"><i class="fa-solid fa-bars"></i></div> <!--aqui puse fontawesome  -->
         </ul>
       </nav>
     </header>
+  </div>
+  
 
-    <main class="container">
+    <!-- Inicio -->
+
+    <section class="about__section" id="inicio">
+      <div class="about__content">
+        <p>
+          Te ayudamos a cuidar a tu mascota mientras no estas o haces homeoffice. Cuidamos perros o gatos, los paseamos, alimentamos y hacemos la siesta.
+        </p>
+         <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhwd0U54sMXmIDo79a34Wdjl0OVM-uNOgSRg&usqp=CAU" alt="mascotas"> -->
+      </div>
+    </section>
+
+    <!-- Nosotros -->
+
+    <section class="nosotros__section" id="nosotros">
+      <main class="container">
       <img
         class="img-cat"
         src="https://i.pinimg.com/564x/0f/1c/15/0f1c15c001c3afc9b338e4fe50bb9acf.jpg"
         alt="esto es un gato"
       />
-      <article>
+      <article class="nosotros__section">
         <h1>
           Te ayudamos a conseguir un <span>lugar temporal</span> para tu
-          <span>gato</span>
+          <span>mascota</span>
         </h1>
         <p>
-          En <span>beavys</span> sabemos que tu <span>gato</span> es un miembro
+          En <span>beavys</span> sabemos que tu <span>mascota</span> es un miembro
           más de la familia y queremos que lo traten de esa manera. Te ayudamos
           a conseguir personas que te ayuden a
-          <span>cuidar a tu mascota mientras no estás</span>.
+          <span>cuidarla mientras no estás</span>.
         </p>
-        <button>Quiero saber más</button>
+        <a href="services" class="btn">Quiero saber más</a>
       </article>
     </main>
+    
+
+    <!-- Que ofrecemos 1 -->
+
+<section class="ofrecemos">
+
+  <div class="ofrecemos_servicios">
+    <div class="nosotros">
+      <i class="fa-solid fa-shield"></i>
+      <h4>Somos confiables</h4>
+      <p>Cuidamos a tu mascota como parte de la familia.</p>
+    </div>
+  </div>  
+
+<!-- Que ofrecemos 2 -->
+
+  <div class="ofrecemos_servicios">
+    <div class="nosotros">
+      <i class="fa-solid fa-paw"></i>
+      <h4>Somos responsables</h4>
+      <p>Tu mascota va a estar bajo supervisión y cuidado constante.</p>
+    </div>
+  </div>
+
+<!-- Que ofrecemos 3 -->
+
+<div class="ofrecemos_servicios">
+  <div class="nosotros">
+    <i class="fa-solid fa-baseball"></i>
+    <h4>Somos divertidos</h4>
+    <p>Tu mascota a va estar entretenida con distintos juegos y actividades.</p>
+  </div>
+  </div>
+
+  </section>
+
+<!-- Servicios 1 -->
+
+    <section class="listproducts" id="servicios">
+      <h2>Conoce nuestros servicios</h2>
+
+      <div class="products__container">
+        <div class="product">
+          <img class="img__servicio1"
+          src="https://i.pinimg.com/236x/5d/9b/d8/5d9bd8b79c818a237750db11b515363d.jpg"
+          alt="servicio1"
+        />
+        <h3>Servicio completo</h3>
+        <p>
+          9 horas de guardería. Incluye paseo, visita al parque, siesta y merienda. 
+        </p>
+        <span class="product__price"> $700</span>
+        <button class="product__btn">Solicitar</button>
+        </div>
+      </div>
+    
+  <!-- Servicios 2 -->
+ 
+    <div class="products__container">
+      <div class="product">
+        <img class="img__servicio3"
+        src="https://i.pinimg.com/564x/a0/c3/5f/a0c35f3c3a175384f6f79691804acefd.jpg"
+        alt="servicio1"
+      />
+      <h3>Yo llevo el snack</h3>
+      <p>
+        9 horas de guardería. Incluye paseo, visita al parque y siesta (no incluye merienda). 
+      </p>
+      <span class="product__price"> $600</span>
+      <button class="product__btn">Solicitar</button>
+      </div>
+    </div>
+
+  <!-- Servicios 3 -->
+
+    <div class="products__container">
+      <div class="product">
+        <img class="img__servicio3"
+        src="https://i.pinimg.com/564x/61/5d/9a/615d9afd284df785bcc0fce5bcefee20.jpg"
+        alt="servicio1"
+      />
+      <h3>Part Time</h3>
+      <p>
+        5 horas de guardería. Incluye paseo, visita al parque, siesta y merienda. 
+      </p>
+      <span class="product__price"> $350</span>
+      <button class="disable">Solicitar</button>
+      <div class="nostock">Cupos agotados</div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- </main>
     <div class="container2">
       <div class="section1">
-        <img
-          src="https://i.pinimg.com/236x/45/2a/b8/452ab8165bb11fd4d5395da935c7ed2c.jpg"
-          alt="homework"
-        />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
-          maiores iste impedit,
-        </p>
+        
       </div>
       <div class="section2">
         <img
@@ -80,6 +193,6 @@
           maiores iste impedit,
         </p>
       </div>
-    </div>
+    </div>  -->
   </body>
 </html>
